@@ -40,13 +40,19 @@ MainScenes 场景
 >> 飘动金币1个  
 ## 代码结构
 > 3个脚本文件  
->> ChangeScene 主场景控制器  
->>> StartSceneView 场景初始化方法  
->>> SceneChangeView 场景切换方法  
->>> QuitSceneView 退出场景  
->> GameObjectEvent 游戏事件类  
->>> ButtonClick 按钮点击方法   
->>> AlreadyBuy 宝箱已购买方法    
->>> ReadyBuy 宝箱未购买方法  
+>> ChangeScene 切换场景类  
+>>> InMainScene 进入主场景 
+>>> ExitMainScene 退出主场景  
+>>> FloatGold 金币生成动画  
+>>> OnClick 购买按钮点击方法   
+>>> createFloat 生成动画对象  
+>> LoadMainScene 加载主场景页面
+>>> OnClick 每日精选购买方法
+>>> LoadSceneInfo 解析json并实例化为实体类
+>>> CreateSoilderBanner 创建士兵页面 
+>>> CreateSoilderCard 创建士兵招募页面  
+>>> CreateCard 创建每日精选 
+>> SimpleJSON 解析json格式类。
+>> ShowCardInfo 展示信息实体类
 ## 流程图
 ![Image text](https://github.com/89trillion-liuhao/myTest/blob/main/1.png)
